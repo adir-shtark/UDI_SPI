@@ -1,20 +1,23 @@
-# 1. Ignore everything by default
+# 1. Ignore all files by default
 *
 
-# 2. Keep the .gitignore file itself
+# 2. Allow Git to traverse all directories (CRITICAL for whitelist approach)
+!*/
+
+# 3. Keep the .gitignore file itself
 !.gitignore
 
-# 3. Keep all TCL scripts in the root directory (Project build script, design_1.tcl)
+# 4. Keep all TCL scripts (Project build script, design_1.tcl)
 !*.tcl
 
-# 4. Keep the RTL folder and all Verilog/SystemVerilog files inside it
-!rtl/
+# 5. Keep the RTL folder and all its contents
 !rtl/**
 
-# 5. Keep the Constraints folder and all XDC files inside it
-!constraints/
+# 6. Keep the Constraints folder and all its contents
 !constraints/**
 
-!bd/
-!bd/**/
+# 7. Keep Block Design files
 !bd/**/*.bd
+
+# 8. Keep your specific C file
+!sw/hello_world_5/src/helloworld.c
