@@ -1,0 +1,20 @@
+# 1. Ignore everything by default
+*
+
+# 2. Keep the .gitignore file itself
+!.gitignore
+
+# 3. Keep all TCL scripts in the root directory (Project build script, design_1.tcl)
+!*.tcl
+
+# 4. Keep the RTL folder and all Verilog/SystemVerilog files inside it
+!rtl/
+!rtl/**
+
+# 5. Keep the Constraints folder and all XDC files inside it
+!constraints/
+!constraints/**
+
+!bd/
+!bd/**/
+!bd/**/*.bd
