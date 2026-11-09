@@ -7,6 +7,8 @@
 # 3. Keep the .gitignore file itself
 !/.gitignore
 
+!/*.xsa
+
 # 4. Keep TCL scripts (Project build script, design_1.tcl)
 !/*.tcl
 
